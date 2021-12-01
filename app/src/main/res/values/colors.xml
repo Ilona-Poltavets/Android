@@ -12,4 +12,5 @@
     <color name="bgForm">#80000000</color>
     <color name="bgInput">#B3E1E1E1</color>
     <color name="transparent20">#00FFFFFF</color>
+    <color name="dark">#FF343A40</color>
 </resources>

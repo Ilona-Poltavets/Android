@@ -3,127 +3,131 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".RegistrationActivity"
+    tools:context=".LoginActivity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg"
     android:elevation="10dp">
 
-    <TableLayout
-        android:layout_width="409dp"
-        android:layout_height="729dp"
-        android:gravity="center_horizontal"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-        <TableRow
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center_horizontal">
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
 
-            <TextView
-                android:id="@+id/textView5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="50dp"
-                android:layout_marginLeft="70dp"
-                android:layout_marginBottom="60dp"
-                android:fontFamily="sans-serif"
-                android:text="Login"
-                android:textColor="@color/white"
-                android:textSize="15pt" />
-        </TableRow>
+            <TableLayout
+                android:layout_width="409dp"
+                android:layout_height="729dp"
+                android:gravity="center_horizontal">
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center_horizontal|fill">
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="10dp"
-                android:fontFamily="sans-serif"
-                android:text="E-mail:"
-                android:textColor="@color/white"
-                android:textSize="10pt" />
-        </TableRow>
+                    <ImageButton
+                        android:id="@+id/backBtn2"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginRight="400dp"
+                        android:layout_marginBottom="30dp"
+                        android:background="@color/transparent20"
+                        android:onClick="goMainMenu"
+                        app:srcCompat="@drawable/abc_vector_test" />
+                </TableRow>
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center_horizontal">
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal">
 
-            <EditText
-                android:id="@+id/emailFild"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="20dp"
-                android:background="@color/bgInput"
-                android:ems="10"
-                android:hint="email@gmail.com"
-                android:inputType="textEmailAddress"
-                android:padding="7dp"
-                android:textSize="8pt" />
-        </TableRow>
+                    <TextView
+                        android:id="@+id/textLabel2"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="170dp"
+                        android:layout_marginBottom="50dp"
+                        android:fontFamily="sans-serif"
+                        android:text="Login"
+                        android:textColor="@color/white"
+                        android:textSize="15pt" />
+                </TableRow>
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center_horizontal">
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal|fill">
 
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="10dp"
-                android:fontFamily="sans-serif"
-                android:text="Password:"
-                android:textColor="@color/white"
-                android:textSize="10pt" />
+                    <TextView
+                        android:id="@+id/email2"
+                        style="@style/labelTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="textEmailAddress"
+                        android:text="E-mail:" />
+                </TableRow>
 
-        </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal|fill">
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center_horizontal">
+                    <EditText
+                        android:id="@+id/emailFild2"
+                        style="@style/txtInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="email@gmail.com"
+                        android:inputType="textEmailAddress" />
+                </TableRow>
 
-            <EditText
-                android:id="@+id/passwordFild"
-                android:layout_width="match_parent"
-                android:layout_height="35dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="20dp"
-                android:background="@color/bgInput"
-                android:ems="10"
-                android:hint="**********"
-                android:inputType="textPassword"
-                android:padding="7dp"
-                android:textSize="8pt" />
-        </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal|fill">
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center_horizontal">
+                    <TextView
+                        android:id="@+id/password2"
+                        style="@style/labelTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Password:" />
 
-            <Button
-                android:id="@+id/registrate"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="50px"
-                android:fontFamily="sans-serif"
-                android:text="Registrate" />
-        </TableRow>
-    </TableLayout>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal|fill">
+
+                    <EditText
+                        android:id="@+id/passwordFild2"
+                        style="@style/txtInput"
+                        android:layout_width="380dp"
+                        android:layout_height="35dp"
+                        android:hint="**********"
+                        android:inputType="textPassword" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal">
+
+                    <Button
+                        android:id="@+id/login"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginRight="60dp"
+                        android:fontFamily="sans-serif"
+                        android:text="Login" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

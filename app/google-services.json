@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1057182419995",
+    "project_id": "ip-music-2072e",
+    "storage_bucket": "ip-music-2072e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1057182419995:android:8020b5023cd5253fc4bcbe",
+        "android_client_info": {
+          "package_name": "com.example.ipmusic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1057182419995-heso07oeugts994g1n7o4appovepihju.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ipmusic",
+            "certificate_hash": "b394872542d415855bcc10c98c4af3ac4309f75d"
+          }
+        },
+        {
+          "client_id": "1057182419995-h54bj0n2vb3v61649ut1n11u7p17roum.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4t5MFPppildrQ-VuQTWdabyegKCHQDQU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1057182419995-h54bj0n2vb3v61649ut1n11u7p17roum.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

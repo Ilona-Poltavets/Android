@@ -9,144 +9,109 @@
     android:background="@drawable/bg"
     android:elevation="10dp">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/bgForm"
-        android:gravity="center|center_horizontal|top"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
-        <ImageButton
-            android:id="@+id/backBtn"
-            android:layout_width="50dp"
-            android:layout_height="30dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginRight="150dp"
-            android:layout_marginBottom="30dp"
-            android:background="@color/transparent20"
-            android:onClick="goMainMenu"
-            app:srcCompat="@drawable/abc_vector_test" />
-
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="10dp"
-            android:layout_marginBottom="60dp"
-            android:fontFamily="sans-serif"
-            android:text="Registration"
-            android:textColor="@color/white"
-            android:textSize="15pt"/>
-
-        <TextView
-            android:id="@+id/textView"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginBottom="10dp"
-            android:fontFamily="sans-serif"
-            android:text="E-mail:"
-            android:textColor="@color/white"
-            android:textSize="10pt" />
+            android:background="@color/bgForm"
+            android:gravity="center|center_horizontal|top"
+            android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/emailFild"
-            android:layout_width="match_parent"
-            android:layout_height="35dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginBottom="20dp"
-            android:background="@color/bgInput"
-            android:ems="10"
-            android:hint="email@gmail.com"
-            android:inputType="textEmailAddress"
-            android:padding="7dp"
-            android:textSize="8pt" />
+            <ImageButton
+                android:id="@+id/backBtn"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="150dp"
+                android:layout_marginBottom="30dp"
+                android:background="@color/transparent20"
+                android:onClick="goMainMenu"
+                app:srcCompat="@drawable/abc_vector_test" />
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginBottom="10dp"
-            android:fontFamily="sans-serif"
-            android:text="Name:"
-            android:textColor="@color/white"
-            android:textSize="10pt" />
+            <TextView
+                android:id="@+id/textLabel1"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="60dp"
+                android:fontFamily="sans-serif"
+                android:text="Registration"
+                android:textColor="@color/white"
+                android:textSize="15pt" />
 
-        <EditText
-            android:id="@+id/nameFild"
-            android:layout_width="match_parent"
-            android:layout_height="35dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginBottom="20dp"
-            android:background="@color/bgInput"
-            android:ems="10"
-            android:hint="Name"
-            android:inputType="textPersonName"
-            android:padding="7dp"
-            android:textSize="8pt" />
+            <TextView
+                android:id="@+id/email2"
+                style="@style/labelTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="E-mail:" />
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginBottom="10dp"
-            android:fontFamily="sans-serif"
-            android:text="Password:"
-            android:textColor="@color/white"
-            android:textSize="10pt" />
+            <EditText
+                android:id="@+id/emailFild"
+                style="@style/txtInput"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:hint="email@gmail.com"
+                android:inputType="textEmailAddress" />
 
-        <EditText
-            android:id="@+id/passwordFild"
-            android:layout_width="match_parent"
-            android:layout_height="35dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginBottom="20dp"
-            android:background="@color/bgInput"
-            android:ems="10"
-            android:hint="**********"
-            android:inputType="textPassword"
-            android:padding="7dp"
-            android:textSize="8pt" />
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/labelTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name:" />
 
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:fontFamily="sans-serif"
-            android:text="Confirm the password:"
-            android:textColor="@color/white"
-            android:textSize="10pt" />
+            <EditText
+                android:id="@+id/nameFild"
+                style="@style/txtInput"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:hint="Name"
+                android:inputType="textPersonName" />
 
-        <EditText
-            android:id="@+id/confirmPasswordFild"
-            android:layout_width="match_parent"
-            android:layout_height="35dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:background="@color/bgInput"
-            android:ems="10"
-            android:hint="**********"
-            android:inputType="textPassword"
-            android:padding="7dp"
-            android:textSize="8pt" />
+            <TextView
+                android:id="@+id/textView3"
+                style="@style/labelTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Password:" />
 
-        <Button
-            android:id="@+id/registrate"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50px"
-            android:fontFamily="sans-serif"
-            android:text="Registrate" />
+            <EditText
+                android:id="@+id/passwordFild"
+                style="@style/txtInput"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:hint="**********"
+                android:inputType="textPassword" />
 
-    </LinearLayout>
+            <TextView
+                android:id="@+id/textView4"
+                style="@style/labelTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Confirm the password:" />
+
+            <EditText
+                android:id="@+id/confirmPasswordFild"
+                style="@style/txtInput"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:hint="**********"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/registrate"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50px"
+                android:fontFamily="sans-serif"
+                android:onClick="showFragment"
+                android:text="Registrate" />
+
+        </LinearLayout>
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
