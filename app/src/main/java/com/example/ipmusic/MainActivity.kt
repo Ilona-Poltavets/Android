@@ -5,8 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.View
-import android.view.Window
-import android.widget.Button
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,6 +27,10 @@ class MainActivity : AppCompatActivity() {
     }
     fun showPlayer(view: View) {
         val intent = Intent(this@MainActivity, PlayerActivity::class.java)
+        startActivity(intent)
+    }
+    fun showListUsers(view: View){
+        val intent=Intent(this@MainActivity, UsersActivity::class.java)
         startActivity(intent)
     }
 }

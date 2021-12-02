@@ -108,7 +108,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="50px"
                 android:fontFamily="sans-serif"
-                android:onClick="showFragment"
+                android:onClick="saveRecord"
                 android:text="Registrate" />
 
         </LinearLayout>

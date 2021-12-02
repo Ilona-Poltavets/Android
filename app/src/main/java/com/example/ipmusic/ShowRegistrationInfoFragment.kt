@@ -7,7 +7,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.DialogFragment
 
 public class ShowRegistrationInfoFragment: DialogFragment() {
-    override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
+    /*override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
         val data=(activity as RegistrationActivity).getInfo()
         return activity?.let {
             val builder = AlertDialog.Builder(it)
@@ -18,5 +18,5 @@ public class ShowRegistrationInfoFragment: DialogFragment() {
                 }
             builder.create()
         } ?: throw IllegalStateException("Activity cannot be null")
-    }
+    }*/
 }

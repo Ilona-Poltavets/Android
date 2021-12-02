@@ -28,17 +28,6 @@ class PlayerActivity : AppCompatActivity() {
 
         val button: Button = findViewById(R.id.button)
 
-        /*val popupMenu2 = PopupMenu(this, button)
-        popupMenu2.inflate(R.menu.popup_menu)
-
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-            popupMenu2.setForceShowIcon(true)
-        }
-
-        button.setOnClickListener {
-            popupMenu2.show()
-        }*/
-
         val popupMenu2 = PopupMenu(this, button)
         popupMenu2.inflate(R.menu.popup_menu)
         popupMenu2.setOnMenuItemClickListener {

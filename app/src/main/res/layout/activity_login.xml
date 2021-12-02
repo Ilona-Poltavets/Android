@@ -54,6 +54,14 @@
                         android:text="Login"
                         android:textColor="@color/white"
                         android:textSize="15pt" />
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="100dp"
+                        android:onClick="showDialog"
+                        app:srcCompat="@android:drawable/ic_dialog_info" />
                 </TableRow>
 
                 <TableRow
