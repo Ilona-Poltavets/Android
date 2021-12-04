@@ -6,18 +6,32 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
+import android.view.animation.AnimationUtils
+import android.widget.Button
+import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        //start animation text
+        val text=findViewById(R.id.title) as TextView
+        val animation = AnimationUtils.loadAnimation(
+            applicationContext,
+            R.anim.start_text
+        )
+        text.startAnimation(animation)
     }
 
+    //create option menu
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         val inflater = menuInflater
         inflater.inflate(R.menu.menu_main, menu)
         return super.onCreateOptionsMenu(menu)
     }
+
+    //transition to other activities
     fun showRegistration(view: View) {
         val intent = Intent(this@MainActivity, RegistrationActivity::class.java)
         startActivity(intent)

@@ -6,13 +6,11 @@ import android.view.ContextMenu
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
-import android.widget.Button
-import android.widget.FrameLayout
-import android.widget.PopupMenu
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import android.content.Intent
 import android.net.Uri
+import android.view.animation.AnimationUtils
+import android.widget.*
 
 
 class PlayerActivity : AppCompatActivity() {
@@ -29,8 +27,8 @@ class PlayerActivity : AppCompatActivity() {
         container = findViewById(R.id.window)
         registerForContextMenu(container)
 
+        //popup menu
         val button: Button = findViewById(R.id.button)
-
         val popupMenu2 = PopupMenu(this, button)
         popupMenu2.inflate(R.menu.popup_menu)
         popupMenu2.setOnMenuItemClickListener {
@@ -55,18 +53,37 @@ class PlayerActivity : AppCompatActivity() {
         button.setOnClickListener {
             popupMenu2.show()
         }
+
+        //animation vinil
+        val playPause = findViewById(R.id.on_off) as ToggleButton
+        val img = findViewById(R.id.vinil) as ImageView
+        playPause.setOnCheckedChangeListener { _, isChecked ->
+            if (isChecked) {
+                val animation = AnimationUtils.loadAnimation(
+                    applicationContext,
+                    R.anim.rotate
+                )
+                img.startAnimation(animation)
+            }
+            else{
+                img.clearAnimation()
+            }
+        }
     }
 
+    //create option menu
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         val inflater = menuInflater
         inflater.inflate(R.menu.sub_menu, menu)
         return super.onCreateOptionsMenu(menu)
     }
 
+    //end this activity
     fun goMainMenu(view: View) {
         finish()
     }
 
+    //context menu
     override fun onCreateContextMenu(
         menu: ContextMenu?,
         v: View?,
@@ -76,6 +93,7 @@ class PlayerActivity : AppCompatActivity() {
         menu?.add(Menu.NONE, IDM_BACK, Menu.NONE, "Back")
         menu?.add(Menu.NONE, IDM_NEXT, Menu.NONE, "Next")
     }
+
     override fun onContextItemSelected(item: MenuItem): Boolean {
 
         val message: CharSequence = when (item.itemId) {
@@ -88,14 +106,18 @@ class PlayerActivity : AppCompatActivity() {
 
         return true
     }
+
+    //onClick for share
     fun openFacebook(item: MenuItem) {
         intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://m.facebook.com/mistikcsgo"))
         startActivity(intent)
     }
+
     fun openTelegram(item: MenuItem) {
         intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://t.me/Ilona_Poltavets"))
         startActivity(intent)
     }
+
     fun openTwitter(item: MenuItem) {
         intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://twitter.com/IPoltawets"))
         startActivity(intent)

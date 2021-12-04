@@ -14,4 +14,5 @@
     <string name="next">Следующий</string>
     <string name="view">Просмотр</string>
     <string name="delete">Удаление</string>
+    <string name="anim">Анимировать</string>
 </resources>

@@ -10,7 +10,8 @@
     <FrameLayout
         android:id="@+id/window"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/bgForm">
 
         <ImageButton
             android:id="@+id/backBtn"
@@ -40,6 +41,14 @@
             android:text="Show popup menu"
             android:layout_marginTop="30dp"
             android:layout_marginLeft="110dp"/>
+
+        <ImageView
+            android:id="@+id/vinil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="180dp"
+            app:srcCompat="@drawable/vinyl" />
     </FrameLayout>
 
     <TableRow
@@ -55,7 +64,7 @@
             android:text="@string/back" />
 
         <ToggleButton
-            android:id="@+id/toggleButton3"
+            android:id="@+id/on_off"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
