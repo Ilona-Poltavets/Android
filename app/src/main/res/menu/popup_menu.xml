@@ -2,11 +2,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/fb_share_ico"
+        android:onClick="openFacebook"
         android:title="Facebook"/>
     <item
         android:id="@+id/tw_share_ico"
+        android:onClick="openTwitter"
         android:title="Twitter" />
     <item
         android:id="@+id/tg_share_ico"
+        android:onClick="openTelegram"
         android:title="Telegram" />
 </menu>

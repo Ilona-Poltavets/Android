@@ -7,12 +7,15 @@
         <menu>
             <item
                 android:id="@+id/fb_share"
+                android:onClick="openFacebook"
                 android:title="Facebook" />
             <item
                 android:id="@+id/tw_share"
-                android:title="Twitter" />
+                android:onClick="openTwitter"
+                android:title="Twitter"/>
             <item
                 android:id="@+id/tg_share"
+                android:onClick="openTelegram"
                 android:title="Telegram" />
         </menu>
 
@@ -23,7 +26,7 @@
         <menu>
             <item
                 android:id="@+id/forward"
-                android:title="Next" />
+                android:title="Next"/>
             <item
                 android:id="@+id/back"
                 android:title="Back" />

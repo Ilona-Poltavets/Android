@@ -11,6 +11,9 @@ import android.widget.FrameLayout
 import android.widget.PopupMenu
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
+import android.net.Uri
+
 
 class PlayerActivity : AppCompatActivity() {
     companion object {
@@ -84,5 +87,17 @@ class PlayerActivity : AppCompatActivity() {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
 
         return true
+    }
+    fun openFacebook(item: MenuItem) {
+        intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://m.facebook.com/mistikcsgo"))
+        startActivity(intent)
+    }
+    fun openTelegram(item: MenuItem) {
+        intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://t.me/Ilona_Poltavets"))
+        startActivity(intent)
+    }
+    fun openTwitter(item: MenuItem) {
+        intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://twitter.com/IPoltawets"))
+        startActivity(intent)
     }
 }
