@@ -20,7 +20,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="goMainMenu"
-                android:text="Back"/>
+                android:text="@string/back"/>
         </TableRow>
 
     </TableLayout>
@@ -47,13 +47,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="viewRecord"
-            android:text="View" />
+            android:text="@string/view" />
 
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="deleteRecord"
-            android:text="Delete" />
+            android:text="@string/delete" />
     </LinearLayout>
 </LinearLayout>

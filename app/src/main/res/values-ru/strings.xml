@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">IP Music</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="action_settings">Настройки</string>
+    <string name="action_reg">Регистрация</string>
+    <string name="action_login">Вход</string>
+    <string name="action_logout">Выход</string>
+    <string name="action_player">К плееру</string>
+    <string name="email">E-mail</string>
+    <string name="password">Пароль</string>
+    <string name="confirm_password">Подтвердите пароль</string>
+    <string name="name">Имя</string>
+    <string name="back">Назад</string>
+    <string name="next">Следующий</string>
+    <string name="view">Просмотр</string>
+    <string name="delete">Удаление</string>
+</resources>

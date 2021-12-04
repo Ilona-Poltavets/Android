@@ -51,7 +51,7 @@
                         android:layout_marginLeft="170dp"
                         android:layout_marginBottom="50dp"
                         android:fontFamily="sans-serif"
-                        android:text="Login"
+                        android:text="@string/action_login"
                         android:textColor="@color/white"
                         android:textSize="15pt" />
 
@@ -60,7 +60,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="100dp"
-                        android:onClick="showDialog"
                         app:srcCompat="@android:drawable/ic_dialog_info" />
                 </TableRow>
 
@@ -75,7 +74,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:inputType="textEmailAddress"
-                        android:text="E-mail:" />
+                        android:text="@string/email" />
                 </TableRow>
 
                 <TableRow
@@ -102,7 +101,7 @@
                         style="@style/labelTxt"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Password:" />
+                        android:text="@string/password" />
 
                 </TableRow>
 
@@ -132,7 +131,8 @@
                         android:layout_marginTop="50dp"
                         android:layout_marginRight="60dp"
                         android:fontFamily="sans-serif"
-                        android:text="Login" />
+                        android:onClick="login"
+                        android:text="@string/action_login" />
                 </TableRow>
             </TableLayout>
         </LinearLayout>
