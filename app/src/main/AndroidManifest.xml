@@ -21,6 +21,7 @@
         <activity android:name=".LoginActivity" />
         <activity android:name=".PlayerActivity" />
         <activity android:name=".UsersActivity" />
+        <activity android:name=".Lr5_6" />
     </application>
 
 </manifest>
